@@ -1,217 +1,212 @@
-# LearnHub - Modern Learning Management System
+# EduTech SITARO - Learning Management System
 
-A comprehensive Learning Management System (LMS) built with React, TypeScript, and Tailwind CSS. Features role-based dashboards for Students, Teachers, and Administrators with modern UI/UX design.
+Sistem Learning Management System (LMS) lengkap untuk meningkatkan literasi digital masyarakat daerah Kabupaten Sitaro. Sistem ini dirancang ringan, mobile-friendly, dan mudah digunakan.
 
-## 🌟 Features
+## 🚀 Fitur Utama
 
-### ✅ Implemented Features
+### 👨‍🎓 Student (Siswa)
+- ✅ Register dan login
+- ✅ Dashboard dengan statistik pembelajaran
+- ✅ Akses materi pembelajaran (PDF, DOC, PPT, Video)
+- ✅ Menonton video dari YouTube atau upload langsung
+- ✅ Upload tugas (PDF, DOC, PPT)
+- ✅ Melihat nilai dan komentar dari guru
+- ✅ Kirim kritik dan saran ke admin
+- ✅ Pengaturan profil dan upload foto
 
-- **Authentication System**
-  - User login and registration
-  - Role-based access control (Student, Teacher, Admin)
-  - Protected routes and authorization
-  - Session persistence
+### 👩‍🏫 Teacher (Guru)
+- ✅ Login dengan akun yang sudah dibuat admin
+- ✅ Dashboard untuk mengelola pembelajaran
+- ✅ Upload materi pembelajaran (PDF, PPT, DOC)
+- ✅ Upload video pembelajaran atau link YouTube
+- ✅ Melihat dan menilai tugas siswa
+- ✅ Memberikan komentar pada tugas
+- ✅ Pengaturan profil (termasuk gambar default ksb.jpg)
 
-- **Role-Based Dashboards**
-  - **Student Dashboard**: Course progress, assignments, recent activities
-  - **Teacher Dashboard**: Course management, student progress tracking, submissions
-  - **Admin Dashboard**: System overview, user management, analytics
+### 🧑‍💼 Admin
+- ✅ Dashboard dengan statistik lengkap
+- ✅ CRUD (Create, Read, Update, Delete) pengguna
+- ✅ Melihat semua materi dan tugas
+- ✅ Mengelola kritik dan saran siswa
+- ✅ Statistik sistem (jumlah user, materi, tugas, dll)
+- ✅ Pengaturan sistem
 
-- **Modern UI/UX**
-  - Responsive design with Tailwind CSS
-  - Clean and intuitive interface
-  - Professional color scheme and typography
-  - Mobile-friendly navigation
+## 🛠️ Teknologi yang Digunakan
 
-- **Navigation System**
-  - Role-specific sidebar navigation
-  - Header with notifications and user profile
-  - Quick action buttons
+### Backend
+- **Node.js** - Runtime JavaScript
+- **Express.js** - Web framework
+- **SQLite** - Database ringan
+- **JWT** - Autentikasi
+- **Multer** - Upload file
+- **bcryptjs** - Enkripsi password
 
-### 🚧 Coming Soon
+### Frontend
+- **React.js** - UI Library
+- **Tailwind CSS** - Styling framework
+- **Lucide React** - Icon library
+- **Axios** - HTTP client
+- **React Router** - Routing
 
-- Video-based learning content
-- File upload and download system
-- Assignment submission and grading
-- Discussion forums
-- Real-time notifications
-- Progress tracking and analytics
-- Course creation and management tools
+## 📋 Prasyarat
 
-## 🚀 Getting Started
+Pastikan Anda sudah menginstall:
+- **Node.js** (versi 16 atau lebih baru)
+- **npm** atau **yarn**
 
-### Prerequisites
+## 🚀 Cara Menjalankan
 
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd lms-system
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm start
-   ```
-
-4. **Access the application**
-   - Open your browser and navigate to `http://localhost:3000`
-
-## 🔐 Demo Accounts
-
-Use these demo accounts to test different user roles:
-
-| Role    | Email             | Password |
-|---------|-------------------|----------|
-| Admin   | admin@lms.com     | password |
-| Teacher | teacher@lms.com   | password |
-| Student | student@lms.com   | password |
-
-## 📱 User Roles & Permissions
-
-### Student Features
-- View enrolled courses and progress
-- Access learning materials
-- Submit assignments
-- Participate in discussion forums
-- View grades and feedback
-
-### Teacher Features
-- Create and manage courses
-- Upload learning materials
-- Create and grade assignments
-- Track student progress
-- Manage course discussions
-
-### Admin Features
-- Manage users (students, teachers)
-- Monitor system activity
-- View analytics and reports
-- Oversee content approval
-- System configuration
-
-## 🛠 Tech Stack
-
-- **Frontend**: React 18 with TypeScript
-- **Styling**: Tailwind CSS
-- **Routing**: React Router DOM
-- **Icons**: Lucide React
-- **State Management**: React Context API
-- **Date Handling**: date-fns
-
-## 📁 Project Structure
-
-```
-src/
-├── components/           # Reusable UI components
-│   ├── auth/            # Authentication components
-│   ├── common/          # Shared components (Layout, Sidebar, Header)
-│   ├── admin/           # Admin-specific components
-│   ├── teacher/         # Teacher-specific components
-│   └── student/         # Student-specific components
-├── pages/               # Page components
-│   ├── auth/            # Login/Register pages
-│   ├── admin/           # Admin dashboard pages
-│   ├── teacher/         # Teacher dashboard pages
-│   └── student/         # Student dashboard pages
-├── context/             # React Context providers
-├── hooks/               # Custom React hooks
-├── types/               # TypeScript type definitions
-├── utils/               # Utility functions
-└── assets/              # Static assets
+### 1. Install Dependencies
+```bash
+cd lms-system
+npm install
 ```
 
-## 🎨 Design System
+### 2. Jalankan Sistem
+```bash
+npm start
+```
 
-### Color Palette
-- **Primary**: Blue (#3b82f6) - Used for main actions and highlights
-- **Secondary**: Gray (#64748b) - Used for text and subtle elements
-- **Success**: Green - Used for positive actions
-- **Warning**: Orange - Used for attention-grabbing elements
-- **Error**: Red - Used for error states
+Perintah ini akan menjalankan:
+- **Backend server** di `http://localhost:5000`
+- **Frontend React** di `http://localhost:3000`
 
-### Typography
-- **Font Family**: Inter (Google Fonts)
-- **Font Weights**: 300, 400, 500, 600, 700
+### 3. Akses Sistem
+Buka browser dan kunjungi: `http://localhost:3000`
 
-## 🔄 State Management
+## 👤 Akun Default
 
-The application uses React Context API for state management:
+Sistem sudah dilengkapi dengan akun default untuk testing:
 
-- **AuthContext**: Manages authentication state and user sessions
-- Future contexts will be added for courses, assignments, and notifications
+### Admin
+- **Username:** `admin`
+- **Password:** `admin123`
 
-## 🛡 Security Features
+### Teacher (Guru)
+- **Username:** `teacher1`
+- **Password:** `teacher123`
 
-- Protected routes with role-based access control
-- Authentication state persistence
-- Input validation and sanitization
-- Secure session management
+### Student (Siswa)
+- Buat akun baru melalui halaman register
 
-## 📊 Performance Optimizations
+## 📁 Struktur Folder
 
-- Component lazy loading (ready for implementation)
-- Image optimization with external CDN
-- Responsive images with proper sizing
-- Efficient re-rendering with React best practices
+```
+lms-system/
+├── public/                 # File statis
+│   ├── uploads/           # File upload
+│   │   ├── materi/       # Upload materi
+│   │   ├── tugas/        # Upload tugas
+│   │   └── profiles/     # Foto profil
+│   └── ksb.jpg           # Gambar default guru
+├── server/                # Backend
+│   ├── controllers/      # Logic controller
+│   ├── middleware/       # Middleware auth
+│   ├── models/           # Database models
+│   ├── routes/           # API routes
+│   ├── utils/            # Utilities
+│   └── index.js          # Server utama
+├── src/                   # Frontend React
+│   ├── components/       # Komponen reusable
+│   ├── contexts/         # React contexts
+│   ├── pages/            # Halaman aplikasi
+│   │   ├── student/      # Halaman siswa
+│   │   ├── teacher/      # Halaman guru
+│   │   └── admin/        # Halaman admin
+│   └── utils/            # Utilities frontend
+└── database.sqlite       # Database SQLite
+```
 
-## 🤝 Contributing
+## 📱 Mobile-Friendly
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Sistem ini dioptimalkan untuk perangkat mobile:
+- ✅ Responsive design
+- ✅ Touch-friendly interface
+- ✅ Optimasi untuk koneksi lambat
+- ✅ File size yang ringan
 
-## 📝 License
+## 🔧 Konfigurasi
 
-This project is licensed under the MIT License.
+### Environment Variables
+Buat file `.env` di root folder untuk konfigurasi:
 
-## 🆘 Support
+```env
+PORT=5000
+JWT_SECRET=edutech_sitaro_secret_key_2024
+REACT_APP_API_URL=http://localhost:5000/api
+```
 
-For support and questions:
-- Create an issue in the repository
-- Contact the development team
+### Upload Limits
+- **Materi:** Maksimal 50MB
+- **Tugas:** Maksimal 20MB
+- **Video:** Maksimal 200MB
+- **Foto Profil:** Maksimal 5MB
+
+## 📝 File yang Didukung
+
+### Materi & Tugas
+- PDF (`.pdf`)
+- Microsoft Word (`.doc`, `.docx`)
+- PowerPoint (`.ppt`, `.pptx`)
+
+### Video
+- MP4 (`.mp4`)
+- AVI (`.avi`)
+- MOV (`.mov`)
+- WMV (`.wmv`)
+- YouTube Links
+
+### Foto Profil
+- JPEG (`.jpg`, `.jpeg`)
+- PNG (`.png`)
+- GIF (`.gif`)
 
 ## 🚀 Deployment
 
-### Build for Production
-
+### Untuk Production
 ```bash
+# Build frontend
 npm run build
+
+# Jalankan server production
+NODE_ENV=production npm run server
 ```
 
-The build artifacts will be stored in the `build/` directory.
+### Hosting Requirements
+- **Node.js** hosting support
+- **File upload** capability
+- **SQLite** database support
 
-### Environment Variables
+## 🆘 Troubleshooting
 
-Create a `.env` file in the root directory for environment-specific configurations:
-
-```env
-REACT_APP_API_URL=your_api_url_here
-REACT_APP_VERSION=1.0.0
+### Port sudah digunakan
+```bash
+# Matikan proses di port 3000/5000
+lsof -ti:3000 | xargs kill -9
+lsof -ti:5000 | xargs kill -9
 ```
 
-## 🔮 Roadmap
+### Database error
+Database SQLite akan dibuat otomatis saat pertama kali menjalankan server.
 
-- [ ] Video streaming integration
-- [ ] Real-time chat and messaging
-- [ ] Advanced analytics dashboard
-- [ ] Mobile app development
-- [ ] Third-party integrations (Zoom, Google Drive)
-- [ ] Multi-language support
-- [ ] Advanced course builder
-- [ ] Automated testing suite
+### File upload error
+Pastikan folder `public/uploads/` memiliki permission write.
+
+## 🤝 Kontribusi
+
+Sistem ini dikembangkan untuk meningkatkan literasi digital masyarakat Sitaro. Kontribusi dan saran perbaikan sangat diterima.
+
+## 📞 Support
+
+Jika mengalami kendala, silakan:
+1. Periksa console browser untuk error
+2. Periksa terminal server untuk log error
+3. Pastikan semua dependencies terinstall dengan benar
+
+## 📄 Lisensi
+
+Dikembangkan untuk kepentingan edukasi dan peningkatan literasi digital masyarakat Kabupaten Sitaro.
 
 ---
 
-Built with ❤️ using React, TypeScript, and Tailwind CSS
+**© 2024 EduTech SITARO** - Sistem Pembelajaran Digital untuk Kabupaten Sitaro
